@@ -1,0 +1,6 @@
+!!config.yaml.CustomerConfig
+name: customer1
+taskmanager:
+  queue:
+    type: FIX
+    maxRunningCapacity: 10

@@ -7,6 +7,8 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * Priority queue with a maximum capacity.
+ *
+ * Possible alternatives for TIME implementation would have been  ArrayBlockingQueue or LinkedBlockingQueue.
  */
 public class BoundedPriorityQueue<E> extends PriorityBlockingQueue<E> {
 

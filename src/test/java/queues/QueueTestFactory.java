@@ -18,11 +18,11 @@ public class QueueTestFactory {
      */
     public static String toTestString(final Stream<Process> stream) {
         return stream
-                .map(QueueTestFactory::getTestString)
+                .map(QueueTestFactory::toTestString)
                 .collect(Collectors.joining(" "));
     }
 
-    public static String getTestString(Process p) {
+    public static String toTestString(Process p) {
         return (p==null) ? "null" : String.format("(%d,%s)", p.getPid(), p.getPriority().name());
     }
 
